@@ -1,0 +1,12 @@
+{{template config_path="design/email/header_template"}}
+
+<p class="greeting">{{trans "Hello welcome  <b>Sai teja </b>," customer_name=$customer.name|row}}</p>
+
+<p>{{trans ' customer <b>Sai teja </b> succesfully  logged into the our  %store_name:' customer_name=$customer.name store_name=$store.getFrontendName()|row}}</p>
+
+<p>{{trans "You don't need to do anything, browse , enjoy our products  and hope u like our store ."|row}}</p>
+
+
+<p>{{trans "thank you for choosing our store have a great day  ."|row}}</p>
+
+{{template config_path="design/email/footer_template"}}
